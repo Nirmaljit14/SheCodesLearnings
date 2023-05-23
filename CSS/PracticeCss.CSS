@@ -1,6 +1,6 @@
-/*
+
 /* Base HTML Styles */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,700&family=Pangolin&display=swap');
 
 :root {
 	--pink: #f38fb1;
@@ -14,10 +14,9 @@
 /* CSS Reset */
 
 html {
-    background-color: #ddd6fe;
 	box-sizing: border-box;
 	font-size: 16px;
-	font-family: 'ultra';
+	font-family: 'Lora', serif;
 	color: var(--black);
 	scroll-behavior: smooth;
 }
@@ -30,11 +29,10 @@ html {
 
 h1 {
     text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Pangolin', cursive;
 }
 
 h2, h3, h4, h5, h6 {
-    text-decoration: underline;
 	font-family: 'Times New Roman', Times, serif;
 }
 
@@ -49,20 +47,27 @@ p,
 ol,
 ul {
 	margin: 0%;
-	padding: 5px;
+	padding: 0px;
 }
 
 ol,
 li,
 ul {
-	list-style: circle;
+	list-style: var(--black);
+	list-style-type: circle;
 }
-        
-img {
-    max-width: 200px;
-    height: 150px;
 
+
+img {
+	display: flex;
+	max-height: 200px;
+	max-width: 250px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 50%;
 }
+
+
 input,
 button,
 textarea,
@@ -81,9 +86,9 @@ input textarea select{
 	padding: 18px;
 }
 
-
 /* Components */
-.btn-primary, .btn-secondary
+
+.btn-secondary
 {
 	padding:12px 16px;
 	display: inline-block;
@@ -91,19 +96,6 @@ input textarea select{
 	color: var(--black);
 	border-radius: 4px;
 	margin: 10px;
-}
-
-.btn-primary {
-	background-color: rgb(212, 21, 226);
-	transition: all 0.3s ease;
-}
-
-.btn-primary:hover 
-{
-	outline: 1px solid var(--black);
-	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
-	/* transform: scale(1.1);*/
-	transform: translateY(-4px);
 }
 
 .btn-secondary {
@@ -141,8 +133,6 @@ nav {
 }
 
 header button {
-	display: flex;
-	justify-content: flex-end;
 	all: unset
 }
 
@@ -185,28 +175,19 @@ header button {
     display: flex;
 	align-items: flex-end;
     font-style: italic;
-	background-color: #f5d0fe;
 	padding: 26px 16px;
 }
+
+.my-intro {
+	background-color: #ed720e;
+	font-style: oblique;
+}
+
 #hero h1 {
 	font-size: 2rem;
 	align-content: flex-start;
 	margin-bottom: 24px;
 }
-#hero logo {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.my-intro{
-    background-color: ;
-    font-style: oblique;
-}
-
-/* .logo {
-    display: flex;
-	justify-content: flex-end;
-} */
 
 @media (min-width: 768px) {
 	#hero {
@@ -225,14 +206,14 @@ header button {
 
 /* Workshop Article */
 
-#course article {
+#courses article {
 	padding: 56px 16px;
 	margin: auto;
 }
 
-#course .my-intro{
+#courses .my-intro{
 	display: block;
-	justify-content: flex-start;
+	font-style: oblique;
 }
 
 @media (min-width: 768px){
@@ -245,8 +226,6 @@ header button {
 }
 
 #courses article .icon {
-	display: flex;
-	justify-content: flex-end;
 	height: 50px;
 }
 
@@ -258,25 +237,20 @@ header button {
 #courses article p {
 	margin-bottom: 16px;
 }
-
-#courses .my-intro {
-	background-color: #22d3ee;
+#courses .Education {
+	background-color: #4a068a;
 }
-#course .Education{
-	background-color: ;
-}
-
 #courses .Experience {
-	background-color: #ACBCFF;
+	background-color: #0a14d3;
 }
 #courses .contact {
-	background-color: #AEE2FF;
+	background-color: #0b99e6;
 }
 
 /* Contact Section */
 
 #contact {
-	background-color: #fdba74;
+	background-color: #d9f99d;
 	padding: 48px 16px
 }
 
@@ -303,12 +277,11 @@ header button {
 }
 
 #contact input[type="submit"] {
-	background-color: #b3eb25;
+	background-color: #ACBCFF;
 	border: 10;
 	margin-top: 16px;
 	cursor: pointer;
 }
-
 
 /* Footer */
 
